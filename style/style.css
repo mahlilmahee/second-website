@@ -158,17 +158,34 @@ top blogs styles
              /* align-items: center; */
        }
        .head{
-             font-size: 11px;
+             font-size: 15px;
        }
        .idea{
-             font-size: 24px;
+             font-size: 20px;
        }
        .div{
-             margin-left: 8px;
+             margin-left: 11px;
        }
        
      }
+     /* media only for the device which have a width of less than 310 px  */
      
+     @media only screen and (max-width:309px) {
+          .head{
+                 font-size: 10px; 
+          }
+          .idea{
+                font-size: 13px;
+          }
+          .div{
+                margin-left: 5px;
+          }
+     }
+
+
+
+
+
      /* tablets only  */
      @media only screen and ( min-width:689px) and ( max-width:992px){
           .container{
