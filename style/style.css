@@ -3,7 +3,7 @@
 /* common fonts  and other utilities*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f3f1ff;
+    background-color: rgb(216, 214, 214);
 }
 .container{
      background-color: white;
@@ -79,8 +79,61 @@ top blogs styles
      font-size: 18px;
 }
 /* courses styles */
+.courses{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+}
 .course .course-banner img{
      
     width: 224px;
     height: 104px;
 }
+.filled{
+      color: rgb(253, 68, 0);
+}
+.empty{
+      color: rgb(126, 119, 119);
+}
+.course-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.fa-star{
+      font-size: 14px;
+}
+/* media quries
+ */
+ /*---------------------
+
+  Mobile phones and my dream lets do it together
+  --------------------- */
+  @media only screen and ( max-width:688px) {
+       .container{
+             width: 100%;
+       }
+       .players , .blogs, .courses{
+            /* background-color: green; */
+            grid-template-columns: repeat(1, 1fr);
+       }
+       .player, .blog{
+             flex-direction: column;
+             /* align-items: center; */
+       }
+     }
+     
+     /* tablets only  */
+     @media only screen and ( min-width:689px) and ( max-width:992px){
+          .container{
+                width: 100%;
+          }
+          .players{
+                /* background-color: lightseagreen; */
+                grid-template-columns: repeat(2, 1fr);
+          }
+          
+     }
+       
+       
+       
+  
