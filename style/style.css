@@ -133,11 +133,23 @@ top blogs styles
 }
 .course-info{
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      align-items:flex-start;
+      /* justify-content: space-evenly; */
+}
+.course{
+     padding:10px;
+     border:1px solid rgb(43, 41, 41);
+     margin:2px;
+     border-radius: 6px;
+     box-shadow:2px 2px 2px rgb(131, 106, 106);
+     
 }
 .fa-star{
       font-size: 14px;
+}
+
+.course-duration{
+     margin-left: 15px;
 }
 /* media quries
  */
